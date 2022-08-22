@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body{
+	font-family: sans-serif;
+	background-color: #33BEFF;
+	color: #FFFFFF;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.grid-container{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	grid-template-columns: repeat(4, 100px);
+	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grid-container > button{
+	cursor: pointer;
+	color: #FFFFFF;
+	background-color: #312B2B;
+	border: 1px solid #100F0F;
+
+}
+
+.grid-container > .operator{
+	background: #3392FF;
+	padding: 10px;
+}
+
+.span-two{
+	grid-column: span 2;
+}
+
+
+.grid-container > .output{
+	background: #473E3E;
+	grid-column:  1 / -1;
+}
+
+.grid-container > .output > .previous-operand{
+	color: #FFFFFF;
+	font-size: 2rem;
+}
+.grid-container > .output > .current-operand{
+	color: #FFFFFF;
+	font-size: 2rem;
+}
